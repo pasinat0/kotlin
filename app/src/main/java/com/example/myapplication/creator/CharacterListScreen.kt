@@ -48,7 +48,7 @@ fun CharacterListScreen(navController: NavController, database: AppDatabase) {
         Text(
             text = "Personagens Criados",
             style = MaterialTheme.typography.headlineLarge,
-            color = Color(0xFF4A148C),
+            color = Color(0xFF8C1414),
             modifier = Modifier.padding(vertical = 16.dp)
         )
 
@@ -58,12 +58,15 @@ fun CharacterListScreen(navController: NavController, database: AppDatabase) {
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(vertical = 4.dp),
-                    colors = CardDefaults.cardColors(containerColor = Color(0xFFD1C4E9))
+                    colors = CardDefaults.cardColors(containerColor = Color(0xA3EE5656))
                 ) {
                     Column(modifier = Modifier.padding(16.dp)) {
-                        Text(text = "Nome: ${character.name}", fontSize = 18.sp, color = Color(0xFF4A148C))
+                        Text(text = "Nome: ${character.name}", fontSize = 18.sp, color = Color(
+                            0xFF000000
+                        )
+                        )
                         Text(text = "Raça: ${character.race}", fontSize = 16.sp, color = Color.Black)
-                        Text(text = "Pontos de Vida: ${character.hitPoints}", fontSize = 14.sp, color = Color.Gray)
+                        Text(text = "Pontos de Vida: ${character.hitPoints}", fontSize = 14.sp, color = Color.Green)
 
                         IconButton(
                             onClick = { deleteCharacter(character) },

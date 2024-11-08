@@ -27,9 +27,9 @@ fun CharacterNameScreen(modifier: Modifier = Modifier, database: AppDatabase, on
                 .fillMaxWidth()
                 .padding(bottom = 8.dp),
             colors = TextFieldDefaults.textFieldColors(
-                containerColor = Color(0xFFD1C4E9),
-                focusedIndicatorColor = Color(0xFF4A148C),
-                unfocusedIndicatorColor = Color(0xFF4A148C)
+                containerColor = Color(0xA175FFF9),
+                focusedIndicatorColor = Color(0xFF1FAED2),
+                unfocusedIndicatorColor = Color(0xFF1FAED2)
             ),
             shape = MaterialTheme.shapes.medium
         )
@@ -49,7 +49,7 @@ fun CharacterNameScreen(modifier: Modifier = Modifier, database: AppDatabase, on
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(bottom = 8.dp),
-            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF4A148C))
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF1FAED2))
         ) {
             Text("Continuar", color = Color.White, fontSize = 16.sp)
         }

@@ -41,8 +41,8 @@ fun CharacterCreationScreen(modifier: Modifier = Modifier, database: AppDatabase
         charisma.toIntOrNull() ?: 8
     ).sum() - initialAttributes.values.sum()
 
-    val darkPurple = Color(0xFF4A148C)
-    val lightPurple = Color(0xFFD1C4E9)
+    val darkPurple = Color(0xFF1FAED2)
+    val lightPurple = Color(0xA175FFF9)
 
     val coroutineScope = rememberCoroutineScope()
 
