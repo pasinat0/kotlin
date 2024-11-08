@@ -51,7 +51,7 @@ fun CharacterNameScreen(modifier: Modifier = Modifier, database: AppDatabase, on
                 .padding(bottom = 8.dp),
             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF1FAED2))
         ) {
-            Text("Continuar", color = Color.White, fontSize = 16.sp)
+            Text("Continuar", color = Color.Black, fontSize = 16.sp)
         }
 
         if (errorMessage.isNotEmpty()) {
